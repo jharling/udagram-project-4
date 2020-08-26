@@ -9,6 +9,7 @@ services:
 install:
   - docker-compose -f udagram-deployment/docker/docker-compose-build.yaml build --parallel
   - docker-compose -f udagram-deployment/docker/docker-compose-build.yaml push
+  - echo "install complete"
 
 # Scripts to be run such as tests
 before_script:
